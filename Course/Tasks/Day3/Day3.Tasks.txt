@@ -1,0 +1,20 @@
+Deadline Ц 10.00, 20.03.2017 
+ћатериалы
+Х	Joseph Albahari, Ben Albahari. C# 5.0 in a Nutshell: The Definitive Reference. Chapter 7: Collections, The Array Class
+Х	Arrays
+https://msdn.microsoft.com/en-us/library/aa287879(v=vs.71).aspx
+Х	Arrays Tutorial
+https://msdn.microsoft.com/en-us/library/aa288453(v=vs.71).aspx
+Х	 оллекции в .NET Framework Class Library. ћассивы
+http://rsdn.ru/article/dotnet/collections.xml#E2GAC
+Х	C#: ¬нутреннее строение инициализаторов массивов
+https://habrahabr.ru/post/247047/
+
+«адание 1. 
+ƒан непр€моугольный целочисленный массив (jagged array). –еализовать метод "пузырьковой" сортировки (метод класса Array не использовать!), таким образом, чтобы была возможность упор€дочить строки матрицы
+Х	в пор€дке возрастани€(убывани€) сумм элементов строк матрицы;
+Х	в пор€дке возрастани€(убывани€) максимальных элементов строк матрицы;
+Х	в пор€дке возрастани€(убывани€) минимальных элементов строк матрицы.
+«адание 2.
+–асширить дл€ целых чисел возможность форматного вывода, добавив представление в шестнадцатеричной системе счислени€ (класс Convert не использовать!). 
+
