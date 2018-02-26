@@ -1,0 +1,41 @@
+Deadline Ц 10.00, 27.03.2017 
+ћатериалы
+ƒемо с юнит тестами, полезные ссылки 
+Х	C# Unit Test Tutorial
+Х	Unit Test Your Code
+Х	Unit-тестирование в аутсорсинге
+Х	Ѕлог јлександра  ондуфорова. ¬ведение в mock-объекты.  лассификаци€
+Х	ѕошаговое руководство. —оздание и запуск модульных тестов дл€ управл€емого кода
+Х	ёнит-тестирование дл€ чайников
+Х	Unit тесты на практике / ’абрахабр
+Х	ћодульное тестирование: 2+2 = 4?
+Х	Test-driven development
+Х	¬ведение в Unit-тестирование
+Х	Unit Testing Framework в составе Visual Studio
+Х	»нструментарий дл€ Unit-тестировани€
+Х	¬ведение в юнит тестирование
+Х	Test-Driven Development Ч телега или лошадь?
+Х	NUnit
+Х	ѕараметризованные юнит тесты
+Х	Rhino Mocks
+Х	ћоки и стабы
+Х	Rhino Mocks Fundamentals.Pluralsight course teaches you how to use Rhino Mocks to improve your unit tests.
+Х	јвтоматизированное тестирование веб-приложени€ (MS Unit Testing Framework + Selenium WebDriver C#). „асть 1: ¬ведение
+Х	јвтоматизированное тестирование веб-приложени€ (MS Unit Testing Framework + Selenium WebDriver C#). „асть 2.1: Selenium API wrapper Ч Browser
+Х	јвтоматизированное тестирование веб-приложени€ (MS Unit Testing Framework + Selenium WebDriver C#). „асть 2.2: Selenium API wrapper Ч WebElement
+Х	јвтоматизированное тестирование веб-приложени€ (MS Unit Testing Framework + Selenium WebDriver C#). „асть 3: WebPages Ч описываем страницы
+Х	јвтоматизированное тестирование веб-приложени€ (MS Unit Testing Framework + Selenium WebDriver C#). „асть 4: Ќаконец-то пишем тесты
+Х	FakeItEasy
+Ћитература
+Х	The Art of Unit Testing: with examples in C# Second Edition Edition. Roy Osherove.downloads
+
+«адание 1. 
+–азработать unit-тесты дл€ тестировани€ метода Ќьютона вычислени€ корн€ n-ой степени числа (задание Day2).
+«адание 2. 
+–азработать unit-тесты дл€ вычислени€ Ќќƒ (задание Day2).
+
+«адание 3. 
+–азработать класс Ђмногочленї дл€ работы с многочленами от одной переменной вещественного типа. ѕерегрузить дл€ класса операции, допустимые дл€ работы с многочленами.
+
+–азработать unit-тесты дл€ класса Ђмногочленї.
+
