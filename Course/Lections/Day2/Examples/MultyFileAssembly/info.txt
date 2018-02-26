@@ -1,0 +1,5 @@
+run as administrator
+csc.exe /t:module auto.cs
+csc.exe /t:module minicar.cs
+csc /t:library /addmodule:auto.netmodule /addmodule:minicar.netmodule /out:car.dll sportcar.cs
+csc /r:car.dll Client.cs
