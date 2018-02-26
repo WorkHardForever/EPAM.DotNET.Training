@@ -1,0 +1,5 @@
+﻿NuGet является отличным инструментом для получения и поддержания пакетов, 
+используемых в проектах Visual Studio
+http://www.nuget.org/
+
+ninject - http://www.ninject.org/learn.html
