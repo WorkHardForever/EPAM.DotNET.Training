@@ -1,0 +1,2 @@
+The most up-to-date samples are always available 
+online through the Visual Studio 2010 Samples page.
