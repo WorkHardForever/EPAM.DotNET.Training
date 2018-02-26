@@ -1,0 +1,40 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <p>Top Entries </p>
+       @foreach (var entry in ViewBag.Entries)
+        {
+            <div>Комментарий:@entry.Message</div>
+            <div>Имя пользователя: @entry.Name </div>
+            <div>Дата: @entry.DateAdd</div>
+            <br />
+        }         
+        <a href="/GuestBook/Create"> Add new Entry</a>
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
