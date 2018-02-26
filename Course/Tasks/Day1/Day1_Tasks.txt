@@ -1,0 +1,43 @@
+Deadline Ц 10.00,   13.04.2017 
+ћатериалы
+»нструментарии
+Х	ILDASM  
+https://msdn.microsoft.com/ru-ru/library/f7dy01k1%28v=vs.110%29.aspx
+Х	.NET Reflector  
+http://www.red-gate.com/products/dotnet-development/reflector/
+Х	ILSpy .NET Decompiler    
+http://ilspy.net/
+Х	dotPeek .NET Decompiler   
+https://www.jetbrains.com/decompiler/
+Visual Studio & Git
+Х	Pro Git
+https://git-scm.com/book/ru/v1
+Х	»нтеграци€ Git с Visual Studio 2012 после установки обновлени€ Update 2
+http://codehint.ru/articles/2013-04-24_git_visual_studio_2012_update_2/2
+Х	Git и GitHub - что это и зачем нужно?
+https://github.com/AnzhelikaKravchuk/.NET-Training/wiki/Visual-Studio-&-Git
+Х	Use Visual Studio and Team Foundation Server with Git
+https://github.com/AnzhelikaKravchuk/.NET-Training/wiki/Visual-Studio-&-Git
+Х	Use Visual Studio with Git 
+https://www.visualstudio.com/en-us/get-started/code/gitquickstart
+Х	–абота с Git в Visual Studio 2012
+https://habrahabr.ru/company/microsoft/blog/175261/
+Х	Git в других окружени€х - Git в Visual Studio
+http://gitscm.com/book/ru/v2/Git-%D0%B2-%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85-Git-%D0%B2-Visual-Studio
+ƒополнительные ссылки
+Х	XML Ц документаци€ 
+https://sandcastle.codeplex.com
+Х	„то нужно знать про арифметику с плавающей зап€той 
+https://habrahabr.ru/post/112953/
+
+«адание 1.
+–еализовать рекурсивный алгоритм поиска максимального элемента в произвольном (неотсортированном) массиве. 
+
+«адание 2.
+ƒан массив целых чисел. Ќайти в массиве и вернуть такой индекс index, дл€ которого сумма элементов слева от него равно сумме элементов справа. ≈сли такого индекса нет вернуть null (-1).
+
+«адание 3.
+–еализовать алгоритм сортировки сли€нием (http://sorting.valemak.com/merge). 
+
+«адание 4.
+ƒл€ двух строк, включающих только символы от 'a'  до  'z', вернуть конкатенированную отсортированную по алфавиту строку, исключа€ повтор€ющиес€ символы.

@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <form method="post">
+            <label>Enter your name</label>
+            <input type="text" id="userName" name="userName" />
+            <input type="submit" />
+            <br />
+        </form>
+        <br />@ViewBag.UserName
+    </div>
+</body>
+</html>
