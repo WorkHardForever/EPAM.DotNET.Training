@@ -1,0 +1,39 @@
+﻿@model IEnumerable<MvcPL.Models.UserViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>All users</h2>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Role)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayTextFor(modelItem => item.Role)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {/* id=item.PrimaryKey */}) |
+                @Html.ActionLink("Details", "Details", new {/* id=item.PrimaryKey */}) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+</table>
+
+<p>
+    @Html.ActionLink("Add new user", "Create")
+</p>

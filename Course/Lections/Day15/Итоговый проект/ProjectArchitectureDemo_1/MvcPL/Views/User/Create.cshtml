@@ -1,0 +1,42 @@
+﻿@using MvcPL.Models
+@model UserViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Create user</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UserName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UserName)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Role)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.Role,
+           new SelectList(Enum.GetNames(typeof(Role))), string.Empty)
+        </div>
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to user's list", "Index")
+</div>
+
+@section Scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
