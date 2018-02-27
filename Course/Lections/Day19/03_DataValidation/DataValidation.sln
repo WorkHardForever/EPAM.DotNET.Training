@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_DataValidation", "DataValidation\001_DataValidation.csproj", "{ADBDB7D7-1D35-4F31-943B-8A375DE53CD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_ExplicitDataValidation", "ExplicitDataValidation\002_ExplicitDataValidation.csproj", "{5E1E04DC-D5E0-41D3-9914-DEB881248A38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003_ModelLevelError", "ModelLevelError\003_ModelLevelError.csproj", "{A2C90EDD-F3F0-439A-B02E-CB697B646C5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "004_MetadataValidation", "MetadataValidation\004_MetadataValidation.csproj", "{67A47593-3FD7-40F7-8FB5-E915B323C0FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "005_CustomValidationAttribute", "CustomValidationAttribute\005_CustomValidationAttribute.csproj", "{F11E32A9-3097-4113-AA56-2D769DEACDBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "006_ClientSideValidation", "ClientSideValidation\006_ClientSideValidation.csproj", "{F0E34409-526D-48EE-BB3F-AE2D7ADB85F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADBDB7D7-1D35-4F31-943B-8A375DE53CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADBDB7D7-1D35-4F31-943B-8A375DE53CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADBDB7D7-1D35-4F31-943B-8A375DE53CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADBDB7D7-1D35-4F31-943B-8A375DE53CD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E1E04DC-D5E0-41D3-9914-DEB881248A38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E1E04DC-D5E0-41D3-9914-DEB881248A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E1E04DC-D5E0-41D3-9914-DEB881248A38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E1E04DC-D5E0-41D3-9914-DEB881248A38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C90EDD-F3F0-439A-B02E-CB697B646C5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C90EDD-F3F0-439A-B02E-CB697B646C5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C90EDD-F3F0-439A-B02E-CB697B646C5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C90EDD-F3F0-439A-B02E-CB697B646C5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67A47593-3FD7-40F7-8FB5-E915B323C0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A47593-3FD7-40F7-8FB5-E915B323C0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A47593-3FD7-40F7-8FB5-E915B323C0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A47593-3FD7-40F7-8FB5-E915B323C0FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F11E32A9-3097-4113-AA56-2D769DEACDBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F11E32A9-3097-4113-AA56-2D769DEACDBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F11E32A9-3097-4113-AA56-2D769DEACDBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F11E32A9-3097-4113-AA56-2D769DEACDBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0E34409-526D-48EE-BB3F-AE2D7ADB85F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0E34409-526D-48EE-BB3F-AE2D7ADB85F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0E34409-526D-48EE-BB3F-AE2D7ADB85F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0E34409-526D-48EE-BB3F-AE2D7ADB85F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

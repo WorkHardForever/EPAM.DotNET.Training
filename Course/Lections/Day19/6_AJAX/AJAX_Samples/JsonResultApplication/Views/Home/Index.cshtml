@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Orders";
+
+    var options = new AjaxOptions()
+    {
+        UpdateTargetId = "tabledata",
+        Url = Url.Action("JsonOrdersData"),
+        LoadingElementId = "loadingIndicator",
+        OnSuccess = "ParseResponse",
+    };
+}
+
+<h2>Orders</h2>
+
+@using (Ajax.BeginForm(options))
+{
+    <div id="loadingIndicator" style="display:none;">Loading...</div>
+    <table cellpadding="4">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Customer</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabledata">
+            @Html.Action("OrdersData", new { id = Model })
+        </tbody>
+
+    </table>
+    <p>
+        @*При отправке обратного запроса на сервер, в форме будет содержаться поле id которое методом действия будет использоваться для фильтрации данных*@
+        @Html.DropDownList("id", new SelectList(new[] { "All", "Ivanov", "Petrov", "Fedorov" }, (Model ?? "All")))
+        <input type="submit" value="Submit" />
+    </p>
+}
+
+@section scripts
+{
+    @*Ненавязивый JavaScript для выполнения запроса на сервер без полного обновления страницы*@
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+<script type="text/javascript">
+    function ParseResponse(data) {
+
+        var target = $("#tabledata");
+        target.empty();
+
+        for (var i = 0; i < data.length; i++) {
+            target.append("<tr><td>" + data[i].Id + "</td><td>"
+                + data[i].Product + "</td><td>"
+                + data[i].Quantity + "</td><td>"
+                + data[i].Customer + "</td></tr>");
+        }
+    }
+</script>
+}
+

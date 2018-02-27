@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<button id="btn1">Articele 1</button>
+<button id="btn2">Articele 2</button>
+
+<div id="articleContent"></div>
+
+
+@section scripts
+{
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                makeRequest(1);
+            });
+
+            $("#btn2").click(function () {
+                makeRequest(2);
+            });
+
+            function makeRequest(id) {
+                // Отправка асинхронного запроса на сервер.
+                // url - адрес ресурса, которому направляется запрос.
+                // type - HTTP метод используемый для отправки запроса.
+                // data - данные передаваемые на сервер.
+                // success - функция, которая запустится при успешной обработке запроса.
+                $.ajax({
+                    url: "@Url.Action("GetArticle")",
+                    type: "GET",
+                    data: "id=" + id,
+                    success: function (response) {
+                        $("#articleContent").text(response);
+                    },
+                });
+            }
+        });
+    </script>
+}
+

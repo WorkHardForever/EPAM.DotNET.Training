@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.8.2.min.js")" type="text/javascript"></script>
+</head>
+<body>
+    @*Визуализация содержимого секции с именем Header*@
+    @RenderSection("Header")
+
+    @*Визуализация контента представления, который не пренадлежит секциям*@
+    @RenderBody()
+
+    <br />
+    <br />
+
+    @*Визуализация содержимого секции с именем Footer*@
+    @RenderSection("Footer")
+</body>
+</html>

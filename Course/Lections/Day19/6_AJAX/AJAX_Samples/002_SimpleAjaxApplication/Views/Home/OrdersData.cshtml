@@ -1,0 +1,11 @@
+﻿@model IEnumerable<_002_SimpleAjaxApplication.Models.Order>
+
+@foreach (_002_SimpleAjaxApplication.Models.Order order in Model)
+{
+    <tr>
+        <td>@Html.DisplayFor(m => order.Id)</td>
+        <td>@Html.DisplayFor(m => order.Product)</td>
+        <td>@Html.DisplayFor(m => order.Quantity)</td>
+        <td>@Html.DisplayFor(m => order.Customer)</td>
+    </tr>
+}

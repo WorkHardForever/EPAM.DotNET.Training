@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Using Child Actions</title>
+</head>
+<body>
+    <div>
+        @*
+            Дочернее действие - метод действия контроллера, который можно выполнить вызвав метод Html.Action в представлении
+            @Html.Action("CurrentDate") - Вызов метода в контроллере и вывод результата в представление.
+        *@
+        <p>
+            @Html.Action("CurrentDate")
+        </p>
+    </div>
+</body>
+</html>

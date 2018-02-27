@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Orders";
+
+    // UpdateTargetId - элемент на странице, который будет
+    //обновляется после получения новых данных со стороны сервера.
+    // Url - адрес ресурса на сервере, который возвращает 
+    //данные для обновления страницы
+    var options = new AjaxOptions()
+    {
+        UpdateTargetId = "tabledata",
+        Url = Url.Action("OrdersData")
+    };
+}
+
+<h2>Orders</h2>
+
+@*
+    Ajax.BeginForm(options) - при использовании данного метода, 
+    генерируется html элемент со специальными атрибутами.
+    Данные атрибуты будут использоваться библиотекой 
+    jquery.unobtrusive-ajax для того, чтобы определить форму, 
+    которая вместо обычного postback запроса должна делать асинхронный запрос.
+*@
+
+
+@using (Ajax.BeginForm(options))
+{
+    <table cellpadding="4">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Customer</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabledata">
+            @Html.Action("OrdersData", new { id = Model })
+        </tbody>
+
+    </table>
+    <p>
+        @*При отправке обратного запроса на сервер, в форме будет содержаться поле id которое 
+          методом действия будет использоваться для фильтрации данных*@
+        @Html.DropDownList("id", new SelectList(new[] { "All", "Ivanov", "Petrov", "Fedorov" }, 
+                                                (Model ?? "All")))
+        <input type="submit" value="Submit" />
+    </p>
+}
+
+@section scripts
+{
+    @*Ненавязивый JavaScript для выполнения запроса на сервер без полного обновления страницы*@
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+}
+

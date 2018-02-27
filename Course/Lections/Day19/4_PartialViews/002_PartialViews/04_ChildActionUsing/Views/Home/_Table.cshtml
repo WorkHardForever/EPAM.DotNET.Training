@@ -1,0 +1,19 @@
+﻿@model IEnumerable<_04_ChildActionUsing.Models.Product>
+
+<table border="1">
+    <tr>
+        <th> #      </th>
+        <th>  Name  </th>
+        <th> Price  </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>  @item.Id      </td>
+            <td>  @item.Name    </td>
+            <td> $ @item.Price  </td>
+        </tr>
+    }
+
+</table>

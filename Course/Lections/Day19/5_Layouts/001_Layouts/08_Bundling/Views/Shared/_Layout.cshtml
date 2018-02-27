@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    @*
+        Бандл - набор CSS или JavaScript файлов, которые на этапе выполнения будут минимизированы и объеденены в один файл.
+        Минификация и бандлинг будут работать только если запустить веб приложение с настройкой
+        <compilation debug="false" targetFramework="4.5" /> в файле web.config
+
+        Настройка бандлов происходит в файле App_Start/BundleConfig.cs
+    *@
+
+    @*
+        Бандл, который содержит все стили.
+        На этапе выполнения преобразовывается в <link herf="...." />
+    *@
+    @Styles.Render("~/Content/css")
+
+    @*
+        Бандл ссылается на JavaScrip библиотеку modernizr для определения поддержки HTML5 и CSS3 возможностей в браузере
+        На этапе выполнения преобразовывается в <script src="...."></script>
+    *@
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @RenderBody()
+
+    @*Бандл с JavaScrip библиотекой jQuery*@
+    @Scripts.Render("~/bundles/jquery")
+
+    @*Не обязательная секция для сценариев отдельных представлений*@
+    @RenderSection("scripts", required: false)
+</body>
+</html>

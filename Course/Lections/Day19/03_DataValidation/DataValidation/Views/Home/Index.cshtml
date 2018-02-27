@@ -1,0 +1,35 @@
+﻿@model DataValidation.Models.AccountModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Registration</h2>
+
+В данной форме не реализована валидация
+
+@using (Html.BeginForm())
+{
+    <p>
+        @Html.LabelFor(x => x.Login)
+        @Html.EditorFor(x => x.Login)
+    </p>
+
+    <p>
+        @Html.LabelFor(x => x.Password)
+        @Html.EditorFor(x => x.Password)
+    </p>
+
+    <p>
+        @Html.LabelFor(x => x.PasswordConfirm)
+        @Html.EditorFor(x => x.PasswordConfirm)
+    </p>
+
+    <p>
+        @Html.LabelFor(x => x.Email)
+        @Html.EditorFor(x => x.Email)
+    </p>
+
+    <input type="submit" value="Register" />
+}
+

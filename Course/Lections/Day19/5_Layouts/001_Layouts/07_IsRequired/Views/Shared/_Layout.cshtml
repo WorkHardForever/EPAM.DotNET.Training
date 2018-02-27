@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.8.2.min.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div>
+        @Html.ActionLink("Index", "Index") | @Html.ActionLink("Foo", "Foo")
+    </div>
+    <br />
+    <br />
+
+    @RenderSection("Body")
+
+    @*Визуализация необязательной секции Footer*@
+    @RenderSection(name: "Footer", required: false)
+</body>
+
+</html>

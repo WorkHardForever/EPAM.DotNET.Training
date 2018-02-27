@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Orders";
+}
+
+<h2>Orders</h2>
+
+@using (Html.BeginForm())
+{
+    <table cellpadding="4">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Customer</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabledata">
+            @Html.Action("OrdersData", new { id = Model })
+        </tbody>
+
+    </table>
+    <p>
+        @*При отправке обратного запроса на сервер, в форме будет содержаться поле id которое 
+          методом действия будет использоваться для фильтрации данных*@
+        @Html.DropDownList("id", new SelectList(new[] { "All", "Ivanov", "Petrov", "Fedorov" }, 
+                                                        (Model ?? "All")))
+        <input type="submit" value="Submit" />
+    </p>
+}
+

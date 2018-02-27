@@ -1,0 +1,26 @@
+﻿@model IEnumerable<_02_StronglyTypedPartialView.Models.Product>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Strongly Typed Partial Views</title>
+</head>
+<body>
+    <div>
+        @foreach (var item in Model)
+        {
+            // Второй параметр метода Partial - модель,
+            //которая будет доступна в частичном представлении
+            @Html.Partial("_ProductDesc", item)
+        }
+    </div>
+
+</body>
+</html>
+
+

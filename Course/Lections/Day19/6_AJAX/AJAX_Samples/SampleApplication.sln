@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_SampleApplication", "SampleApplication\001_SampleApplication.csproj", "{5471EE90-5C1E-4E16-AC87-E09B627B0675}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_SimpleAjaxApplication", "002_SimpleAjaxApplication\002_SimpleAjaxApplication.csproj", "{C1F5C7C8-F1E8-4A05-94B7-2F81FA33D90C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003_SimpleAjaxApplication", "SimpleAjaxApplication\003_SimpleAjaxApplication.csproj", "{799A368B-4171-48AA-BCF7-0DF074FAF7A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "004_AjaxLinksApplication", "AjaxLinksApplication\004_AjaxLinksApplication.csproj", "{C5A14445-8CF2-4B75-9CE9-82A110C1B8C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "005_AjaxCallbacks", "AjaxCallbacks\005_AjaxCallbacks.csproj", "{D1C07C99-ED2A-4263-9402-BA1740AB8994}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "006_JsonResultApplication", "JsonResultApplication\006_JsonResultApplication.csproj", "{5409DB8A-4FC7-459C-BD74-839EB2221B34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "007_jQueryApplication", "jQueryApplication\007_jQueryApplication.csproj", "{1D228104-194F-4D26-8B68-9A754AA2D38E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5471EE90-5C1E-4E16-AC87-E09B627B0675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5471EE90-5C1E-4E16-AC87-E09B627B0675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5471EE90-5C1E-4E16-AC87-E09B627B0675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5471EE90-5C1E-4E16-AC87-E09B627B0675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1F5C7C8-F1E8-4A05-94B7-2F81FA33D90C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1F5C7C8-F1E8-4A05-94B7-2F81FA33D90C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1F5C7C8-F1E8-4A05-94B7-2F81FA33D90C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1F5C7C8-F1E8-4A05-94B7-2F81FA33D90C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{799A368B-4171-48AA-BCF7-0DF074FAF7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{799A368B-4171-48AA-BCF7-0DF074FAF7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{799A368B-4171-48AA-BCF7-0DF074FAF7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{799A368B-4171-48AA-BCF7-0DF074FAF7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5A14445-8CF2-4B75-9CE9-82A110C1B8C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A14445-8CF2-4B75-9CE9-82A110C1B8C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A14445-8CF2-4B75-9CE9-82A110C1B8C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A14445-8CF2-4B75-9CE9-82A110C1B8C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1C07C99-ED2A-4263-9402-BA1740AB8994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C07C99-ED2A-4263-9402-BA1740AB8994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C07C99-ED2A-4263-9402-BA1740AB8994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C07C99-ED2A-4263-9402-BA1740AB8994}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5409DB8A-4FC7-459C-BD74-839EB2221B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5409DB8A-4FC7-459C-BD74-839EB2221B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5409DB8A-4FC7-459C-BD74-839EB2221B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5409DB8A-4FC7-459C-BD74-839EB2221B34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D228104-194F-4D26-8B68-9A754AA2D38E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D228104-194F-4D26-8B68-9A754AA2D38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D228104-194F-4D26-8B68-9A754AA2D38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D228104-194F-4D26-8B68-9A754AA2D38E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

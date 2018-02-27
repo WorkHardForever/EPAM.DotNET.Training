@@ -1,0 +1,37 @@
+﻿@model ExplicitDataValidation.Models.AccountModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Registration</h2>
+
+
+@using (Html.BeginForm())
+{
+    <p>
+        @Html.LabelFor(x => x.Login)
+        @Html.EditorFor(x => x.Login)
+        @Html.ValidationMessageFor(x => x.Login)
+    </p>
+
+    <p>
+        @Html.LabelFor(x => x.Password)
+        @Html.EditorFor(x => x.Password)
+        @Html.ValidationMessageFor(x => x.Password)
+    </p>
+
+    <p>
+        @Html.LabelFor(x => x.PasswordConfirm)
+        @Html.EditorFor(x => x.PasswordConfirm)
+        @Html.ValidationMessageFor(x => x.PasswordConfirm)
+    </p>
+
+    <p>
+        @Html.LabelFor(x => x.Email)
+        @Html.EditorFor(x => x.Email)
+        @Html.ValidationMessageFor(x => x.Email)
+    </p>
+
+    <input type="submit" value="Register" />
+}

@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.8.2.min.js")" type="text/javascript"></script>
+</head>
+<body>
+    @*
+        При создании компоновки, вместо метода RenderBody 
+        можно использовать только методы RenderSection это 
+        поможет создать более строгую структуру
+        представления состоящую только из секций.
+    *@
+
+    @RenderSection("Header")
+    @RenderSection("Body")
+    @RenderSection("Footer")
+</body>
+</html>
+
