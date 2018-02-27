@@ -1,0 +1,39 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @Html.ActionLink("Action #1", "Action1", "Data") <br />
+        <a id="sendRequest" href="#">Action #2 (JavaScript)</a>
+
+        <div id="result"></div>
+
+        <script src="~/Scripts/jquery-2.0.2.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#sendRequest").click(function () {
+                    // Получение данных с помощью GET запроса
+                    $.ajax({
+                        url: "@Url.Action("Action2", "Data")",
+                        type : "POST",
+                        success: function (data) {
+                            $("#result")
+                                .append("Name: " + data.Name + "<br />")
+                                .append("Price: " + data.Price + "<br />")
+                                .append("Description: " + data.Description + "<br />");
+                        }
+                    });
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

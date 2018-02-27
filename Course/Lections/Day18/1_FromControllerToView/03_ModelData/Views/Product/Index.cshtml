@@ -1,0 +1,35 @@
+﻿@using _03_ModelData.Models
+@model IEnumerable<Product>
+
+@* @model _03_ModelData.Models.Product *@
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @foreach (var item in Model)
+        {            
+            <h3>Имя продукта: @item.Name</h3>
+
+            if (item.Category == "Канцтовары")
+            {
+                <p>На канцтовары действует <b>скидка 10%</b></p>
+            }
+
+            if (item.Price < 5)
+            {
+                @:стоимость доставки 10 рублей.
+            }
+        <br />
+             
+        }
+    </div>
+</body>
+</html>

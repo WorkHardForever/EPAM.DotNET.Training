@@ -1,0 +1,30 @@
+﻿/*Стиль для всей таблицы*/
+.grid 
+{
+	background-color:black;
+	border:0;
+}
+
+/*Стиль для заголовка таблицы*/
+.header
+{
+	background-color:Red;	
+}
+
+/*Строка таблицы*/
+.row
+{
+	background-color:White;	
+}
+
+/*Нечетная строка таблицы*/
+.alt-row
+{
+	background-color:whiteSmoke;
+}
+
+/*Последняя строка таблицы*/
+.footer
+{
+	background-color:Yellow;
+}

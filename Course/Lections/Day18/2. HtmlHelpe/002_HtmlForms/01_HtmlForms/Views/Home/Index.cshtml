@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Способы создания HTML форм</h2>
+
+@*
+    Html.BeginForm - создание формы с установкой значения атрибута action. Значение устанавливается с учетом механизма маршрутизации. 
+*@
+
+@{
+    Html.BeginForm("Index", "Home");
+}
+
+    <p>Первая форма</p>
+    <input type="submit" />
+
+@{
+    Html.EndForm();
+}
+
+@using (Html.BeginForm("Index", "Home"))
+{
+    <div>
+        <p>Содержание формы</p>
+    </div>    
+    
+    <input type="submit" />
+}

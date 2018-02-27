@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm())
+{
+    @:Раскрывающийся список
+    @Html.DropDownList("list1",
+                        new SelectList(new[] { "Item 1", "Item 2", "Item 3" }))
+
+    <br />
+
+    @:Список с множественным выбором
+    @Html.ListBox("list2",
+                   new MultiSelectList(new[] { "A", "B", "C" }),
+                   new { style = "width:100px;" })
+
+    <br />
+
+    <input type="submit" name="button" value="Отправить" />
+}
+
+<br />
+<br />
+
+<div>
+    Раскрывающийся список - @ViewBag.Selected1
+    <br />
+    Список с множественным выбором - @ViewBag.Selected2
+</div>

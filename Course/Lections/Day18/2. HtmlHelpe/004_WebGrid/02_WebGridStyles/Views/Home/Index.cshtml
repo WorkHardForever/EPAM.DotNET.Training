@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "WebGrid Styles";
+    var grid = new WebGrid(source: Model, rowsPerPage: 3);
+}
+
+@section styles
+{
+    <link href="~/Content/GridStyles.css" rel="stylesheet" />    
+}
+
+<h2>WebGrid Styles</h2>
+
+@*Стили для WebGrid находятся в файле /Content/GridStyles.css*@
+@grid.GetHtml(tableStyle: "grid",
+              headerStyle: "header",
+              rowStyle: "row",
+              alternatingRowStyle: "alt-row",
+              footerStyle: "footer",
+              htmlAttributes: new { cellpadding = "6px", cellspacing = "0px" })

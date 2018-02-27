@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "WebGrid Columns";
+
+    var grid = new WebGrid(Model);
+}
+
+<h2>WebGrid Columns</h2>
+
+@grid.GetHtml(
+    columns: grid.Columns(
+        grid.Column(columnName: "Name", header: "Имя"),
+        grid.Column(header: "Логотип", format: @<img src="@item.ImagePath" />, canSort:false),
+        grid.Column(header: "Скачать браузер", format: @<a href="@item.Url">Скачать @item.Name</a>)
+    )
+)

@@ -1,0 +1,37 @@
+﻿@model _04_StronglyTypedHelperMethods.Models.TaskModel
+
+@{
+    ViewBag.Title = "Create New Task";
+}
+
+@*
+    @Html.TextBoxFor(лямбда выражение) - строго типизированный вспомогательный метод для создание элемента управления и 
+    задания для него значения из модели (значение берется на основе лямбда выражения). 
+    Может использоваться только в строго типизированных представлениях.
+*@
+
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>Create New Task Form</legend>
+
+        <div>
+            <label>Task Name</label>
+            @Html.TextBoxFor(m => m.Name)
+        </div>
+
+        <div>
+            <label>Start Date</label>
+            @Html.TextBoxFor(m => m.StartDate)
+        </div>
+
+        <div>
+            <label>Is Completed</label>
+            @Html.CheckBoxFor(m => m.Completed)
+        </div>
+
+        <input type="submit" value="Create" />
+
+    </fieldset>
+}

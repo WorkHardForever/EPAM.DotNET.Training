@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+Дни недели:
+@Html.UnorderedList(ViewBag.Days as string[])
+
+Фрукты:
+@Html.UnorderedList(ViewBag.Fruits as string[])
+
+

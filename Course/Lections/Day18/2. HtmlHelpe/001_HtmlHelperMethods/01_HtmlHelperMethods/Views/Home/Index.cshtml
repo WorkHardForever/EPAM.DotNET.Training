@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@*
+    Встраиваемый вспомогательный метод HTML.
+    Метод может использоваться только в этом представлении.
+*@
+
+@helper CreateLit(IEnumerable<string>  items)
+{
+    <ul>
+        @foreach (var item in items)
+        {
+            <li>@item</li>
+        }
+    </ul>
+}
+
+Дни недели:
+@CreateLit(ViewBag.Days)
+
+Фрукты:
+@CreateLit(ViewBag.Fruits)

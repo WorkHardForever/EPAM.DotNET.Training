@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Create New Task";
+}
+
+@*
+    При использовании перегрузки @Html.TextBox(string) создается input с типом text и атрибутом name и id указанном в параметре.
+    Важная особенность данного метода - поиск данных для атрибута value элемента при вызове.
+    При следующем вызове @Html.TextBox("Name") поиск будет происходить в такой последовательности:
+    1) ViewBag.Name
+    2) ViewData["Name"]
+    3) @Model.Name
+*@
+
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>Create New Task Form</legend>
+
+        <div>
+            <label>Task Name</label>
+            @Html.TextBox("Name")
+        </div>
+
+        <div>
+            <label>Start Date</label>
+            @Html.TextBox("StartDate")
+        </div>
+
+        <div>
+            <label>Is Completed</label>
+            @Html.CheckBox("Completed")
+        </div>
+
+        <input type="submit" value="Create" />
+
+    </fieldset>
+}

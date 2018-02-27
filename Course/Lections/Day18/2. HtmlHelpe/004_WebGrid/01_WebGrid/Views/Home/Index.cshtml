@@ -1,0 +1,15 @@
+﻿@model IEnumerable<_01_WebGrid.Models.BrowserInfo>
+
+@{
+    ViewBag.Title = "Index";
+    // WebGrid - генерирует разметку для отображения данных в таблице.
+    
+    // Для проекта созданного по шаблону Basic необходимо добавить ссылку на сборку System.Web.Halpers и в свойствах сборки
+    // установить значение Copy Local = True для того чтобы использовать класс WebGrid
+    
+    var grid = new WebGrid(Model);
+}
+
+<h2>WebGrid Sample</h2>
+@*Получение разметки*@
+@grid.GetHtml()

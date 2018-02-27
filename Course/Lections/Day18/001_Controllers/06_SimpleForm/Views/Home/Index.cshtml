@@ -1,0 +1,38 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @* BeginForm - создает элемент form с атрибутами в соответсвии с параметрами*@
+        @using (Html.BeginForm("Index", "Home"))
+        {
+            @*@Html.TextBox("x") - создает элемент input type="text" с атрибутам в соответсвии с настройками*@
+            <label>X</label> @Html.TextBox("x") <br />
+            <label>Y</label> @Html.TextBox("y") <br />
+            if (ViewBag.Result != null)
+            {
+                <p>@ViewBag.Result</p>
+            }
+            <input type="submit" name="operation" value="Get Result" />
+        }
+
+        @*
+            Код данного представления будет представлен следующей HTML разметкой
+
+            <form action="/Home/Index" method="post">
+                <label>X</label> <input type="text" name="x" /> <br />
+                <label>Y</label> <input type="text" name="y" /> <br />
+                <input type="submit" name="operation" value="Get Result" />
+            </form>
+        *@
+    </div>
+</body>
+</html>

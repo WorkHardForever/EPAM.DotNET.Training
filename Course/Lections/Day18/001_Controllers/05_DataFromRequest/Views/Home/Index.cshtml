@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <!--Данные отправляются с помощью POST запроса-->
+        <form action="/Data/PostInformation" method="post">
+            <input type="text" name="message" />
+            <input type="submit" value="Отправить на сервер" />
+        </form>
+
+        <!--Данные отправляются с помощью GET запроса, как данные в маршруте-->
+        <a href="/Data/RouteInformation/hello-world-routedata">Route Data</a>
+
+        <br />
+        <!--Данные отправляются с помощью GET запроса, как данные адресной строки-->
+        <a href="/Data/QueryInformation?message=hello-world-querystring">QueryString Data</a>
+    </div>
+</body>
+</html>
